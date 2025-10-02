@@ -6,6 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon" />
    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
+   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
    <link rel="stylesheet" href="assets/css/styles.css" />
    <title>Portfolio Website - Adi Arya</title>
 </head>
@@ -102,108 +105,169 @@
       <section class="education section" id="education">
          <h3 class="section__subtitle">My<span> Journey</span></h3>
          <h2 class="section__title">Educational level</h2>
-         <div class="education__container container grid">
-            <article class="education__card">
-               <a href="https://undiksha.ac.id/" target="_blank"><i class="ri-graduation-cap-fill education__icon"></i></a>
-               <h3 class="education__title">Ganesha University of Education</h3>
-               <span class="education__subtitle">2024 - Present</span>
-               <p class="education__description">
-                  Currently pursuing a Bachelor's degree in Information Systems at Ganesha University of Education, focusing on software development, data analysis, and information technology management.
-               </p>
-            </article>
-            <article class="education__card">
-               <a href="https://smansasingaraja.sch.id/" target="_blank"><i class="ri-school-fill education__icon"></i></a>
-               <h3 class="education__title">SMA Negeri 1 Singaraja</h3>
-               <span class="education__subtitle">2021 - 2024</span>
-               <p class="education__description">
-                  Completed high school education with a focus on science and mathematics, laying a strong foundation for further studies in information technology.
-               </p>
-            </article>
-            <article class="education__card">
-               <a href="https://sekolah.smpn6singaraja.sch.id/" target="_blank"><i class="ri-building-fill education__icon"></i></a>
-               <h3 class="education__title">SMP Negeri 6 Singaraja</h3>
-               <span class="education__subtitle">2018 - 2021</span>
-               <p class="education__description">
-                  Attended junior high school where I developed essential academic skills and participated in various extracurricular activities.
-               </p>
-            </article>
-            <article class="education__card">
-               <a href="https://www.tribaja.sch.id/" target="_blank"><i class="ri-community-fill education__icon"></i></a>
-               <h3 class="education__title">SD Negeri 3 Singaraja</h3>
-               <span class="education__subtitle">2012 - 2018</span>
-               <p class="education__description">
-                  Completed primary education, building the foundational skills in literacy, numeracy, and social interaction.
-               </p>
-            </article>
-            <article class="education__card">
-               <a href="https://drive.google.com/drive/folders/1i1YWSimPXFL4itSLd1p1-M6tLv0jQtUo?usp=drive_link" target="_blank"><i class="ri-trophy-fill education__icon"></i></a>
-               <h3 class="education__title">Certificate of Achievement</h3>
-               <p class="education__description">
-                  Awarded in recognition of an outstanding achievement and excellence in a event. This certificate stands as a testament to the skills and dedication demonstrated.
-               </p>
-            </article>
-            <article class="education__card">
-               <a href="https://drive.google.com/drive/folders/1W2GofZm0DxisN0NieOhZe00hk2Xj2Ize?usp=drive_link" target="_blank"><i class="ri-parent-fill education__icon"></i></a>
-               <h3 class="education__title">Certificate of Participation</h3>
-               <p class="education__description">
-                  This certifies active participation in a professional development activity. This involvement was aimed at deepening knowledge and honing relevant skills.
-               </p>
-            </article>
+
+         <div class="education__container container swiper">
+            <div class="swiper-wrapper">
+               <article class="education__card swiper-slide">
+                  <div class="education__card-inner">
+                     <div class="education__card-front">
+                        <a href="https://undiksha.ac.id/" target="_blank"><i class="ri-graduation-cap-fill education__icon"></i></a>
+                        <h3 class="education__title">Ganesha University of Education</h3>
+                        <span class="education__subtitle">2024 - Present</span>
+                        <p class="education__description">
+                           Currently pursuing a Bachelor's degree in Information Systems at Ganesha University of Education.
+                        </p>
+                     </div>
+                     <div class="education__card-back">
+                        <img src="assets/img/undiksha.png" alt="Undiksha" class="education__card-img">
+                     </div>
+                  </div>
+               </article>
+
+               <article class="education__card swiper-slide">
+                  <div class="education__card-inner">
+                     <div class="education__card-front">
+                        <a href="https://smansasingaraja.sch.id/" target="_blank"><i class="ri-school-fill education__icon"></i></a>
+                        <h3 class="education__title">SMA Negeri 1 Singaraja</h3>
+                        <span class="education__subtitle">2021 - 2024</span>
+                        <p class="education__description">
+                           Completed high school education with a focus on science and mathematics.
+                        </p>
+                     </div>
+                     <div class="education__card-back">
+                        <img src="assets/img/smansa.png" alt="Smansa" class="education__card-img">
+                     </div>
+                  </div>
+               </article>
+
+               <article class="education__card swiper-slide">
+                  <div class="education__card-inner">
+                     <div class="education__card-front">
+                        <a href="https://sekolah.smpn6singaraja.sch.id/" target="_blank"><i class="ri-building-fill education__icon"></i></a>
+                        <h3 class="education__title">SMP Negeri 6 Singaraja</h3>
+                        <span class="education__subtitle">2018 - 2021</span>
+                        <p class="education__description">
+                           Developed essential academic skills and participated in various extracurricular activities.
+                        </p>
+                     </div>
+                     <div class="education__card-back">
+                          <img src="assets/img/spensix.png" alt="Spensix" class="education__card-img">
+                     </div>
+                  </div>
+               </article>
+               
+               <article class="education__card swiper-slide">
+                  <div class="education__card-inner">
+                     <div class="education__card-front">
+                        <a href="https://www.tribaja.sch.id/" target="_blank"><i class="ri-community-fill education__icon"></i></a>
+                        <h3 class="education__title">SD Negeri 3 Singaraja</h3>
+                        <span class="education__subtitle">2012 - 2018</span>
+                        <p class="education__description">
+                           Completed primary education, building the foundational skills in literacy and numeracy.
+                        </p>
+                     </div>
+                     <div class="education__card-back">
+                          <img src="assets/img/sd3.png" alt="SD 3" class="education__card-img">
+                     </div>
+                  </div>
+               </article>
+
+               <article class="education__card swiper-slide">
+                    <div class="education__card-inner">
+                       <div class="education__card-front">
+                          <a href="https://drive.google.com/drive/folders/1i1YWSimPXFL4itSLd1p1-M6tLv0jQtUo?usp=drive_link" target="_blank"><i class="ri-trophy-fill education__icon"></i></a>
+                          <h3 class="education__title">Certificate of Achievement</h3>
+                          <p class="education__description">
+                             Awarded in recognition of an outstanding achievement and excellence in a event.
+                          </p>
+                      </div>
+                       <div class="education__card-back">
+                            <img src="assets/img/achiv.png" alt="Achievement" class="education__card-img">
+                       </div>
+                   </div>
+               </article>
+
+               <article class="education__card swiper-slide">
+                    <div class="education__card-inner">
+                       <div class="education__card-front">
+                          <a href="https://drive.google.com/drive/folders/1W2GofZm0DxisN0NieOhZe00hk2Xj2Ize?usp=drive_link" target="_blank"><i class="ri-parent-fill education__icon"></i></a>
+                          <h3 class="education__title">Certificate of Participation</h3>
+                          <p class="education__description">
+                             This certifies active participation in a professional development activity.
+                          </p>
+                       </div>
+                       <div class="education__card-back">
+                            <img src="assets/img/partisipan.png" alt="Participation" class="education__card-img">
+                       </div>
+                   </div>
+               </article>
+            </div>
          </div>
       </section>
 
       <section class="projects section" id="projects">
          <h3 class="section__subtitle">My<span> Works</span></h3>
          <h2 class="section__title">Recent Projects</h2>
-         <div class="projects__container container grid">
-            <article class="projects__card">
-               <img src="assets/img/project-img-1.png" alt="projects image" class="projects__img" />
-               <div class="projects__modal">
-                  <span class="projects__subtitle">AXSARA OS</span>
-                  <h2 class="projects__title">Operating system</h2>
-                  <a href="https://drive.google.com/drive/folders/1UJkeqtQK6sHDuOwgNdoflkJj5iolZk8c?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
-               </div>
-            </article>
-            <article class="projects__card">
-               <img src="assets/img/project-img-2.png" alt="projects image" class="projects__img" />
-               <div class="projects__modal">
-                  <span class="projects__subtitle">PKM Karsa Cipta</span>
-                  <h2 class="projects__title">Nusigntara</h2>
-                  <a href="https://drive.google.com/drive/folders/1VdtqikApADa_qKzKik9lPnbtDMa4hM4k?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
-               </div>
-            </article>
-            <article class="projects__card">
-               <img src="assets/img/project-img-3.png" alt="projects image" class="projects__img" />
-               <div class="projects__modal">
-                  <span class="projects__subtitle">NexusCharge</span>
-                  <h2 class="projects__title">The Smart Map</h2>
-                  <a href="https://drive.google.com/file/d/1jalTMDP_eZn2oVz8O1v2T5dTV_1YGAQC/view?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
-               </div>
-            </article>
-            <article class="projects__card">
-               <img src="assets/img/project-img-4.png" alt="projects image" class="projects__img" />
-               <div class="projects__modal">
-                  <span class="projects__subtitle">PHOTOGRAPHY</span>
-                  <h2 class="projects__title">Capturing moments</h2>
-                  <a href="https://drive.google.com/drive/folders/1x9kHZ_FwdD0XTUMlZpKElNZ5dew0ep45?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
-               </div>
-            </article>
-            <article class="projects__card">
-               <img src="assets/img/project-img-5.png" alt="projects image" class="projects__img" />
-               <div class="projects__modal">
-                  <span class="projects__subtitle">DESIGN</span>
-                  <h2 class="projects__title">Visual Design</h2>
-                  <a href="https://drive.google.com/drive/folders/1Q9xMIBbk3oAERZVBYnFJC7ylSlWJIgVd?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
-               </div>
-            </article>
-            <article class="projects__card">
-               <img src="assets/img/project-img-6.png" alt="projects image" class="projects__img" />
-               <div class="projects__modal">
-                  <span class="projects__subtitle">JOURNAL</span>
-                  <h2 class="projects__title">Writing and reporting</h2>
-                  <a href="https://drive.google.com/file/d/1lR7AmZUl1nWsiiFXvtBW5zLIGXFhiKX7/view?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
-               </div>
-            </article>
+
+         <div class="projects__container container swiper">
+            <div class="swiper-wrapper">
+               <article class="projects__card swiper-slide">
+                  <img src="assets/img/project-img-1.png" alt="projects image" class="projects__img" />
+                  <div class="projects__modal">
+                     <span class="projects__subtitle">AXSARA OS</span>
+                     <h2 class="projects__title">Operating system</h2>
+                     <a href="https://drive.google.com/drive/folders/1UJkeqtQK6sHDuOwgNdoflkJj5iolZk8c?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
+                  </div>
+               </article>
+
+               <article class="projects__card swiper-slide">
+                   <img src="assets/img/project-img-2.png" alt="projects image" class="projects__img" />
+                   <div class="projects__modal">
+                      <span class="projects__subtitle">PKM Karsa Cipta</span>
+                      <h2 class="projects__title">Nusigntara</h2>
+                      <a href="https://drive.google.com/drive/folders/1VdtqikApADa_qKzKik9lPnbtDMa4hM4k?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
+                   </div>
+               </article>
+
+               <article class="projects__card swiper-slide">
+                   <img src="assets/img/project-img-3.png" alt="projects image" class="projects__img" />
+                   <div class="projects__modal">
+                      <span class="projects__subtitle">NexusCharge</span>
+                      <h2 class="projects__title">The Smart Map</h2>
+                      <a href="https://drive.google.com/file/d/1jalTMDP_eZn2oVz8O1v2T5dTV_1YGAQC/view?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
+                   </div>
+               </article>
+
+               <article class="projects__card swiper-slide">
+                   <img src="assets/img/project-img-4.png" alt="projects image" class="projects__img" />
+                   <div class="projects__modal">
+                      <span class="projects__subtitle">PHOTOGRAPHY</span>
+                      <h2 class="projects__title">Capturing moments</h2>
+                      <a href="https://drive.google.com/drive/folders/1x9kHZ_FwdD0XTUMlZpKElNZ5dew0ep45?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
+                   </div>
+               </article>
+
+               <article class="projects__card swiper-slide">
+                   <img src="assets/img/project-img-5.png" alt="projects image" class="projects__img" />
+                   <div class="projects__modal">
+                      <span class="projects__subtitle">DESIGN</span>
+                      <h2 class="projects__title">Visual Design</h2>
+                      <a href="https://drive.google.com/drive/folders/1Q9xMIBbk3oAERZVBYnFJC7ylSlWJIgVd?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
+                   </div>
+               </article>
+               
+               <article class="projects__card swiper-slide">
+                   <img src="assets/img/project-img-6.png" alt="projects image" class="projects__img" />
+                   <div class="projects__modal">
+                      <span class="projects__subtitle">JOURNAL</span>
+                      <h2 class="projects__title">Writing and reporting</h2>
+                      <a href="https://drive.google.com/file/d/1lR7AmZUl1nWsiiFXvtBW5zLIGXFhiKX7/view?usp=drive_link" class="projects__button">View Project <i class="ri-external-link-line"></i></a>
+                   </div>
+               </article>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
          </div>
       </section>
 
@@ -248,9 +312,11 @@
       <button id="music-control" class="music-control-button"><i class="ri-play-line"></i></button>
    </div>
 
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
    <script src="assets/js/scrollreveal.min.js"></script>
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
    <script src="assets/js/main.js"></script>
 </body>
 
