@@ -1,4 +1,3 @@
-/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
@@ -15,7 +14,7 @@ if (navClose) {
   });
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
+
 const navLink = document.querySelectorAll(".nav__link");
 const linkAction = () => {
   const navMenu = document.getElementById("nav-menu");
@@ -23,7 +22,7 @@ const linkAction = () => {
 };
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/*=============== ADD BLUR TO HEADER ===============*/
+
 const blurHeader = () => {
   const header = document.getElementById("header");
   this.scrollY >= 50 ?
@@ -32,7 +31,7 @@ const blurHeader = () => {
 };
 window.addEventListener("scroll", blurHeader);
 
-/*=============== EMAIL JS ===============*/
+
 const contactForm = document.getElementById("contact-form");
 const contactMessage = document.getElementById("contact-message");
 
@@ -62,7 +61,7 @@ const sendEmail = (e) => {
 
 contactForm.addEventListener("submit", sendEmail);
 
-/*=============== SHOW SCROLL UP ===============*/
+
 const scrollUp = () => {
   const scrollUpButton = document.getElementById("scroll-up");
   window.scrollY >= 350 ?
@@ -71,7 +70,7 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+
 const sections = document.querySelectorAll("section[id]");
 
 const scrollActive = () => {
@@ -85,16 +84,18 @@ const scrollActive = () => {
       ".nav__menu a[href*=" + sectionId + "]"
     );
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      sectionsClass.classList.add("active-link");
-    } else {
-      sectionsClass.classList.remove("active-link");
+    if (sectionsClass) {
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            sectionsClass.classList.add("active-link");
+        } else {
+            sectionsClass.classList.remove("active-link");
+        }
     }
   });
 };
 window.addEventListener("scroll", scrollActive);
 
-/*=============== MUSIC CONTROL ===============*/
+
 const music = document.getElementById('background-music');
 const musicControlButton = document.getElementById('music-control');
 const musicIcon = musicControlButton.querySelector('i');
@@ -111,7 +112,7 @@ musicControlButton.addEventListener('click', () => {
   }
 });
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+
 const sr = ScrollReveal({
   origin: "top",
   distance: "80px",
@@ -129,11 +130,8 @@ sr.reveal(`.about__data, .skills__content`, {
 sr.reveal(`.about__image, .skills__data`, {
   origin: "right"
 });
-sr.reveal(`.education__card, .projects__card`, {
-  interval: 150
-});
 
-/*=============== PARTICLES.JS CONFIGURATION ===============*/
+
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -211,4 +209,60 @@ particlesJS("particles-js", {
     }
   },
   "retina_detect": true
+});
+
+
+const educationSwiper = new Swiper('.education__container.swiper', {
+  loop: true,
+  spaceBetween: 32,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1152: {
+      slidesPerView: 3,
+    }
+  }
+});
+
+const projectsSwiper = new Swiper('.projects__container.swiper', {
+  loop: true,
+  spaceBetween: 32,
+  grabCursor: true,
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1152: {
+      slidesPerView: 3,
+    }
+  }
+});
+
+
+const educationCards = document.querySelectorAll('.education__card.swiper-slide');
+
+educationCards.forEach(card => {
+  card.addEventListener('click', function(event) {
+    // Cek apakah elemen yang diklik adalah link (<a>) atau berada di dalam link.
+    // Jika ya, jangan lakukan apa-apa (biarkan link berfungsi normal).
+    if (event.target.closest('.education__card-front a')) {
+      return;
+    }
+
+    this.classList.toggle('is-flipped');
+  });
 });
